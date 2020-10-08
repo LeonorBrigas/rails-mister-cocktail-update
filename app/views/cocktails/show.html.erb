@@ -1,0 +1,25 @@
+<div class="banner" style="background-image: url('<%= image_path 'cocktails.jpg' %>'); height: 50vh; background-position: center;">
+  <div class="banner-content">
+    <h1><%= @cocktail.name %></h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+        <div style="background-color: white; padding: 30px; margin-top: 10px;">
+          <h2>Ingredients</h2>
+          <% @coktail.doses.each do |dose| %>
+          <h4><%= dose.description %></h4>
+          <% end %>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-6">
+  <div style="background-color: white; padding: 30px; margin-top: 10px;">
+    <%= render "doses/form" %>
+  </div>
+</div>
+
