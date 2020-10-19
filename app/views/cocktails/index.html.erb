@@ -11,14 +11,19 @@
   </div>
 
 
-<div class="container">
+<div class="card-container">
 <h1 class="cocktails mt-2">Cocktails</h1>
   <div class="row">
     <% @cocktails.each do |cocktail| %>
     <div class="col-xs-12 col-sm-6 col-lg-4">
-      <div class="card-cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'cocktails.jpg' %>');">
+      <div class="card-cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path cocktail.photo %>');">
         <div class="card-description">
           <h2><%= link_to cocktail.name, cocktail_path(cocktail), class: "link-to-cocktail" %></h2>
+          <div class = "card-destroy">
+              <%= link_to cocktail_path(cocktail), method: :delete, data: { confirm: "Are you sure?"} do %>
+              <i class="fas fa-trash"></i>
+            </div>
+            <% end %>
         </div>
       </div>
     </div>
