@@ -1,5 +1,5 @@
 class CocktailsController < ApplicationController
-  before_action :set_params, only: [:show, :edit, :destroy]
+  before_action :set_params, only: [:show, :destroy]
 
   # CRUD = create, read, update, destroy
 
@@ -35,17 +35,17 @@ class CocktailsController < ApplicationController
   # UPDATE
   # edit
   # update
-  def edit
-  end
+  # def edit
+  # end
 
-  def update
-    if @cocktail.update(cocktail_params)
-      # go the the page with all cocktails
-      redirect_to cocktails_path
-    else
-      render :edit
-    end
-  end
+  # def update
+  #   if @cocktail.update(cocktail_params)
+  #     # go the the page with all cocktails
+  #     redirect_to cocktails_path
+  #   else
+  #     render :edit
+  #   end
+  # end
 
   def destroy
     @cocktail.destroy
@@ -55,7 +55,7 @@ class CocktailsController < ApplicationController
 
   private
   def cocktail_params
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, :photo)
   end
 
   def set_params

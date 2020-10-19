@@ -1,6 +1,8 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <a class="navbar-brand" href="#">
-    <img src="https://img.icons8.com/plasticine/100/000000/cocktail.png"/>
+    <%= link_to root_path do %>
+     <%= image_tag("https://img.icons8.com/plasticine/100/000000/cocktail.png", :class => "cocktail_icon") %>
+    <% end %>
 </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

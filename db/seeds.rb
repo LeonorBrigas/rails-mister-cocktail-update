@@ -26,9 +26,12 @@ end
 
 puts "Creating cocktails"
 
-Cocktail.create(name: "sex on the beach")
-Cocktail.create(name: "gin")
-Cocktail.create(name: "caipirinha")
+Cocktail.create(name: "Gin", photo: "https://images.unsplash.com/photo-1453824979084-c8fd42932378?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80")
+Cocktail.create(name: "Caipirinha", photo:"https://images.unsplash.com/photo-1570813092574-b4cccfc58f9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80")
+Cocktail.create(name: "Margarita", photo: "https://images.unsplash.com/photo-1541976076758-347942db1975?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1494&q=80")
+Cocktail.create(name: "Martini", photo: "https://images.unsplash.com/photo-1575023782549-62ca0d244b39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80")
+Cocktail.create(name: "Mojito", photo: "https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80")
+
 
 # to see in the terminal
 # curl -s https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list

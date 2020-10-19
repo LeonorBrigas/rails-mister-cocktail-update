@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 # homepage
   root to: "cocktails#index"
 
-  resources :cocktails, only: [:index, :show, :new, :create] do
+  resources :cocktails, only: [:index, :show, :new, :create, :destroy] do
     resources :doses, only: [:new, :create]
     # resources :reviews, only: [:create]
   end

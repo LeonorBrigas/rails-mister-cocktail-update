@@ -1,3 +1,11 @@
+.card-container {
+  padding: 32px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  margin: auto;
+}
+
 .card-cocktail {
   height: 175px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
@@ -13,12 +21,37 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
+  color: white;
+}
+
+.card-description a {
+  text-decoration: none;
+  color: #FFF;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 
 .card-description h2 {
   font-size: 24px;
+  left: auto;
+  right: auto;
 }
 
 .card-link:hover {
   opacity: 0.8;
 }
+
+.card-destroy {
+  position: absolute;
+  bottom: 10px;
+  right: -30px;
+  color: white;
+}
+
+.fa-trash {
+  color: white;
+}
+
+.dose-trash {
+  color: black;
+}
+
